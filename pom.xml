@@ -6,7 +6,7 @@
 
     <groupId>com.quacktopia</groupId>
     <artifactId>QuacktopiaSafety</artifactId>
-    <version>1.0</version>
+    <version>1.01</version>
     <packaging>jar</packaging>
 
     <name>QuacktopiaSafety</name>

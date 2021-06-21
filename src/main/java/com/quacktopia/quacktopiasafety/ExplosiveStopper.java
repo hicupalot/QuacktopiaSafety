@@ -3,8 +3,10 @@ package com.quacktopia.quacktopiasafety;
 import org.bukkit.entity.EntityType;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.entity.EntitySpawnEvent;
+import org.bukkit.event.weather.LightningStrikeEvent;
 
 public class ExplosiveStopper implements Listener {
 
@@ -24,6 +26,14 @@ public class ExplosiveStopper implements Listener {
     public void BlockDamage(EntityDamageEvent e){
         if (e.getCause().equals(EntityDamageEvent.DamageCause.BLOCK_EXPLOSION)){
             e.setCancelled(true);
+            e.setDamage(0);
+        }
+    }
+    @EventHandler
+    public void Lightning(EntityDamageByEntityEvent e){
+        if (e.getDamager().getType().equals(EntityType.LIGHTNING)){
+            e.setCancelled(true);
+            e.setDamage(0);
         }
     }
 }
