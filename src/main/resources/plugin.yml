@@ -1,0 +1,11 @@
+name: QuacktopiaSafety
+version: ${project.version}
+main: com.quacktopia.quacktopiasafety.QuacktopiaSafety
+api-version: 1.13
+authors: [ hicupalot ]
+description: Keeping Quacktopia Safe
+
+permissions:
+  quacktopia.staff:
+    description: Staff Permission
+    default: op
