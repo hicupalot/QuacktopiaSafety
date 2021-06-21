@@ -9,6 +9,7 @@ public final class QuacktopiaSafety extends JavaPlugin {
         // Plugin startup logic
         getServer().getPluginManager().registerEvents(new BlockBanner(), this);
         getServer().getPluginManager().registerEvents(new ExplosiveStopper(), this);
+        getServer().getPluginManager().registerEvents(new EventChecker(), this);
     }
 
     @Override
