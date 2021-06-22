@@ -6,7 +6,6 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.entity.EntitySpawnEvent;
-import org.bukkit.event.weather.LightningStrikeEvent;
 
 public class ExplosiveStopper implements Listener {
 

@@ -4,7 +4,10 @@ main: com.quacktopia.quacktopiasafety.QuacktopiaSafety
 api-version: 1.13
 authors: [ hicupalot ]
 description: Keeping Quacktopia Safe
-
+commands:
+  nvoff:
+    description: Turns off your nightvision
+    default: non-op
 permissions:
   quacktopia.staff:
     description: Staff Permission
