@@ -8,6 +8,7 @@ public final class QuacktopiaSafety extends JavaPlugin {
     public void onEnable() {
         // Plugin startup logic
         getCommand("nvoff").setExecutor(new nvoff());
+        getCommand("quacktest").setExecutor(new QuacktopiaSafetyTest());
         getServer().getPluginManager().registerEvents(new BlockBanner(), this);
         getServer().getPluginManager().registerEvents(new ExplosiveStopper(), this);
         getServer().getPluginManager().registerEvents(new EventChecker(), this);
